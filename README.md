@@ -2,7 +2,7 @@
 
 Welcome to the Exam Day Finder application! This tool helps students quickly find their exam schedule by simply entering their roll number.
 
-<!-- link -->
+[https://giaic-exams-schedule.vercel.app/](https://giaic-exams-schedule.vercel.app/)
 
 ## Features
 
@@ -47,7 +47,8 @@ Make sure you have the following installed:
     Create a `.env` file in the root directory and add the following:
 
     ```sh
-    MONGODB_URI=your_mongodb_connection_string
+    MONGODB_URI="your_mongodb_connection"
+    BASE_URI="http://localhost:3000"
     ```
 
 4. **Run the Application**:
@@ -68,7 +69,6 @@ Make sure you have the following installed:
 - `components/`: Contains React components.
 - `lib/`: Contains utility functions and validation schemas.
 - `public/`: Contains static assets.
-- `styles/`: Contains global styles.
 
 ### Contributing
 
