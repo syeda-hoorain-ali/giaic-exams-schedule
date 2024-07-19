@@ -20,7 +20,7 @@ interface Data {
 
 export const fetchExams = async (rollNo: number): Promise<Data> => {
     try {
-        const res = await fetch(`${process.env.BASE_URL as string}/api`, {
+        const res = await fetch(`/api`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

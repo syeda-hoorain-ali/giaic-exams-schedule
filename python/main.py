@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 from pymongo import MongoClient
 
@@ -17,7 +18,7 @@ data['Time'] = pd.to_datetime(data['Time'], errors='coerce').dt.strftime('%H:%M:
 
 
 #^ Create a DataBase and insert the data
-URI: str = "mongodb+srv://jagjets133:Hellocomputer12345@cluster0.tzifphj.mongodb.net/"
+URI: str = os.getenv("MONGODB_URI") or ''
 client = MongoClient(URI)
 
 db = client['giaic_exams']
